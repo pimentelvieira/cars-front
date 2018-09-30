@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="col-md-6">
+    <h2 class="text-center">Adicionar Carro</h2>
+    <form>
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input [(ngModel)]="car.nome" placeholder="Nome" name="nome" class="form-control" id="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="placa">Placa:</label>
+            <input [(ngModel)]="car.placa" placeholder="Placa" name="placa" class="form-control" id="placa">
+        </div>
+
+        <button class="btn btn-success" (click)="createCar()">Adicionar</button>
+    </form>
+</div>

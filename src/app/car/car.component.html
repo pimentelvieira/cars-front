@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="col-md-6">
+    <div class="text-center">
+        <h2>Lista de Carros</h2>
+    </div>
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="hidden">Id</th>
+                <th>Nome</th>
+                <th>Placa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of cars">
+                <td class="hidden">{{car.id}}</td>
+                <td>{{car.nome}}</td>
+                <td>{{car.placa}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
