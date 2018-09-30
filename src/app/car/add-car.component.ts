@@ -19,6 +19,7 @@ export class AddCarComponent {
     this.carService.createCar(this.car)
         .subscribe( data => {
           alert("Carro criado com sucesso.");
+          this.router.navigate(['/cars']);
         });
 
   };
